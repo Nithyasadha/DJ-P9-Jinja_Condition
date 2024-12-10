@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja_condition</title>
+</head>
+<body>
+    <h1>Jinja_condition</h1>
+    <!--{% if a < 20 %}
+     {{a}}
+    {% endif %}-->
+
+    <!--{% if age > 18 %}
+    <h1>{{name}} eligible for voting</h1>
+    {% else %}
+    <h1>{{name}} not eligible for voting</h1>
+    {% endif %}-->
+
+    <!--{% if marks < 30 %}
+    <p>The student is fail</p>
+    {% elif marks > 30 and marks < 60 %}
+    <p>'B' grade</p>
+    {% elif marks > 60 and marks < 100 %}
+    <p>'A' grade</p>
+    {% endif %}-->
+
+    {% if age > 18 %}
+    <p>The student is eligible</p>
+        {% if grade == 'B' %}
+        <p>First grade</p>
+        {% else %}
+        <p>Fail</p>
+        {% endif %}
+    {% endif %}
+
+    <!--{% for i in name %}
+    <h1>{{i}}</h1>
+    {% endfor %}-->
+
+
+
+
+
+
+</body>
+</html>
